@@ -1,0 +1,61 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="16dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:textSize="30sp"
+        android:text="150217 JAC 스파이앱"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:id="@+id/text2"
+        android:textSize="20sp"
+        android:text="자동으로 악성 서비스가 시작됩니다"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:id="@+id/text3"
+        android:textSize="25sp"
+        android:text="자동으로 SMS를 탈취합니다!"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/text4"
+        android:textSize="20sp"
+        android:text="중지를 원하시면 아래 버튼을 누르세요"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/stopbtn"
+        android:onClick="mOnClick"
+        android:text="서비스 중지"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/stopbtn"
+        android:gravity="right"
+        android:id="@+id/creatername"
+        android:textSize="20sp"
+        android:text="TheQ"
+        />
+</RelativeLayout>
