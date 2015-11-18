@@ -45,7 +45,7 @@
 
 
     <!--
-    카메라 기능 추가가 어려워 해당 퍼미션 주석화
+    151102 Remove camera capturing feature
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-feature android:name="android.hardware.camera2" />
     -->

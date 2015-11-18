@@ -17,6 +17,8 @@ import android.util.Log;
  * 추가해야할 것
  * 1. 연결 가능/불가능 등 네트워크 상태에 대한 대처
  * 2.
+ *
+ * 151102 Remove camera capturing feature
  */
 public class SMSBroadcastReceiver extends BroadcastReceiver {
 
