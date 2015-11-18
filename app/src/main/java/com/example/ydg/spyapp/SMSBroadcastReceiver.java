@@ -53,10 +53,12 @@ public class SMSBroadcastReceiver extends BroadcastReceiver {
                 Log.i(LogTag, "Analyze: Record");
                 InformationSend sendRecordData = new InformationSend(context, "Record");
             }
+            /*
             if (smsBody.indexOf("Capture") != -1) {
                 Log.i(LogTag, "Analyze: Capture");
                 InformationSend sendCameraCapture = new InformationSend(context, "Capture");
             }
+            */
         }
     }
 }
