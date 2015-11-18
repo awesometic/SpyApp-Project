@@ -33,8 +33,8 @@ import static android.hardware.Camera.*;
 public class InformationSend {
     public final static String LogTag = "checking_InfoSendLogcat";
     protected Context mContext;
-    final String mailID = "apptestgyu@gmail.com";
-    final String mailPW = "zuvzdzqiugshzymg";
+    final String mailID = "testappidddd@gmail.com";
+    final String mailPW = "xbcuxgblaarbkowc";
     final String phoneNumber;
     String date;
 
