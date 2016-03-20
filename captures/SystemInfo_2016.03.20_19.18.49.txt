@@ -1,0 +1,46 @@
+Applications Memory Usage (kB):
+Uptime: 174486791 Realtime: 501721923
+
+** MEMINFO in pid 14914 [com.example.ydg.spyapp] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap      974      940        0     4992     7936     6611     1324
+  Dalvik Heap      429      420        0     1928     3851     1861     1990
+ Dalvik Other      143      140        0        0                           
+        Stack      104      104        0        8                           
+    Other dev        4        0        4        0                           
+     .so mmap      201       56        0     3232                           
+    .apk mmap       30        0        0        0                           
+    .dex mmap      328        4      324        0                           
+    .oat mmap      158        0       20        0                           
+    .art mmap      663      408        4      364                           
+   Other mmap        9        8        0        0                           
+      Unknown       80       80        0      164                           
+        TOTAL     3123     2160      352    10688    11787     8472     3314
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:      832
+         Native Heap:      940
+                Code:      404
+               Stack:      104
+            Graphics:        0
+       Private Other:      232
+              System:      611
+ 
+               TOTAL:     3123      TOTAL SWAP (KB):    10688
+ 
+ Objects
+               Views:        0         ViewRootImpl:        0
+         AppContexts:        2           Activities:        0
+              Assets:        3        AssetManagers:        2
+       Local Binders:        2        Proxy Binders:       10
+       Parcel memory:        2         Parcel count:        8
+    Death Recipients:        0      OpenSSL Sockets:        0
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:        0
+ 

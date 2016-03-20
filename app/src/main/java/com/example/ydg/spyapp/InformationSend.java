@@ -31,7 +31,7 @@ import static android.hardware.Camera.*;
  * 2. 녹음 전송시 파일명이 제대로 입력되지 않음
  */
 public class InformationSend {
-    public final static String LogTag = "checking_InfoSendLogcat";
+    public final static String LogTag = "checking_infoSend";
     protected Context mContext;
     final String mailID = "apptestgyu@gmail.com";
     final String mailPW = "zuvzdzqiugshzymg";

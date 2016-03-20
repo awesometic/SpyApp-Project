@@ -14,7 +14,7 @@ import android.util.Log;
  */
 public class SpyService extends Service {
 
-    public final static String LogTag = "checking_ServiceLogcat";
+    public final static String LogTag = "checking_spyservice";
     boolean isOn;
 
     public void onCreate() {

@@ -22,7 +22,7 @@ model {
     }
 
     android.ndk {
-        moduleName = "mainactivity"
+        moduleName = "hook"
     }
 }
 

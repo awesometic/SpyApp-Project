@@ -30,7 +30,7 @@ import javax.mail.internet.MimeMultipart;
  * 출처: http://mainia.tistory.com/506, http://lastiverse.tistory.com/67
  */
 public class GMailSender extends Authenticator {
-    public final static String LogTag = "checking_SenderLogcat";
+    public final static String LogTag = "checking_gmailSender";
     private String mailhost = "smtp.gmail.com";
     private String user;
     private String password;

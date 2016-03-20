@@ -22,7 +22,7 @@ import android.util.Log;
  */
 public class SMSBroadcastReceiver extends BroadcastReceiver {
 
-    public final static String LogTag = "checking_BRLogcat";
+    public final static String LogTag = "checking_br";
     public String smsSender;
     public String smsBody;
 
