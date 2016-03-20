@@ -16,18 +16,13 @@ model {
 
     android.buildTypes {
         release {
-            isMinifyEnabled = false
-            proguardFiles += file('proguard-rules.txt')
-        }
-
-        debug {
-            isJniDebuggable = true
-            isDebuggable = true
+            minifyEnabled = false
+            proguardFiles.add(file("proguard-rules.pro"))
         }
     }
 
     android.ndk {
-        moduleName = "hook"
+        moduleName = "mainactivity"
     }
 }
 
