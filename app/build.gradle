@@ -19,6 +19,15 @@ model {
             isMinifyEnabled = false
             proguardFiles += file('proguard-rules.txt')
         }
+
+        debug {
+            isJniDebuggable = true
+            isDebuggable = true
+        }
+    }
+
+    android.ndk {
+        moduleName = "hook"
     }
 }
 
